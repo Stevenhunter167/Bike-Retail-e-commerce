@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Browsing</title>
+    <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css">
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet"
+          href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons">
+    <link rel="stylesheet"
+          href="https://www.gstatic.com/devrel-devsite/prod/v7edd884088d642c108fc8ea1bd75617f2dc0af2fd196f78fa8668ffffb81a7bc/developers/css/app.css">
+    <noscript>
+        <link rel="stylesheet"
+              href="https://www.gstatic.com/devrel-devsite/prod/v7edd884088d642c108fc8ea1bd75617f2dc0af2fd196f78fa8668ffffb81a7bc/developers/css/ce_bundle.css">
+    </noscript>
+    <link rel="shortcut icon"
+          href="https://www.gstatic.com/devrel-devsite/prod/v7edd884088d642c108fc8ea1bd75617f2dc0af2fd196f78fa8668ffffb81a7bc/developers/images/favicon.png">
+    <link rel="apple-touch-icon"
+          href="https://www.gstatic.com/devrel-devsite/prod/v7edd884088d642c108fc8ea1bd75617f2dc0af2fd196f78fa8668ffffb81a7bc/developers/images/touchicon-180.png">
+    <link rel="canonical" href="https://developers.google.com/gsuite/add-ons/guides/css">
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Google Developers" href="https://developers.google.com/s/opensearch.xml">
+
+</head>
+<body>
+
+<div class="navbar">
+    <!-- <div id="app"></div> -->
+    <devsite-header top-row--height="48" bottom-row--height="48" bottom-tabs--height="48" fixed="" offset="0"
+                    bottom-row--hidden="" >
+
+
+        <div class="devsite-header--inner">
+            <div class="devsite-top-logo-row-wrapper-wrapper">
+                <div class="devsite-top-logo-row-wrapper">
+                    <div class="devsite-top-logo-row">
+                        <button type="button" id="devsite-hamburger-menu"
+                                class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+                                data-category="Site-Wide Custom Events" data-label="Navigation menu button"
+                                aria-label="Open menu">
+                        </button>
+                        <div class="devsite-product-name-wrapper">
+
+
+  <span class="devsite-product-name">
+    <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                                  <a href="/team-108/" class="devsite-breadcrumb-link gc-analytics-event"
+                                     data-category="Site-Wide Custom Events" data-label="Upper Header" data-value="1">Fablix Bikes
+  </a>
+              </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/team-108/browsing.html" class="devsite-breadcrumb-link gc-analytics-event"
+                       data-category="Site-Wide Custom Events" data-label="Upper Header" data-value="2">
+                        Browsing
+                    </a>
+        </li>
+  </ul>
+  </span>
+                        </div>
+                        <div class="devsite-top-logo-row-middle">
+                            <div class="devsite-header-upper-tabs">
+                            </div>
+
+                            <img width="40px" src="/team-108/default-user-icon-17.png" style="margin-right: 15px;"/>
+
+                            <div id="user_login_email" style="margin-right: 15px;">
+
+                            </div>
+                            <script>
+                                document.getElementById("user_login_email").innerHTML = localStorage.getItem("fablix_user_login_email");
+                            </script>
+                            <button onclick="logout()">Logout</button>
+                            <script>
+                                function logout() {
+                                    jQuery.ajax({
+                                        url: "/team-108/api/logout",
+                                        success: (result) => {
+                                            localStorage.setItem("lastSearch", "");
+                                            localStorage.getItem("fablix_user_login_email");
+                                            window.location.href = "/team-108/login.html";
+                                        }
+                                    });
+
+                                }
+                            </script>
+
+                            <div class="devsite-search-background" style="opacity: 1;"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="devsite-collapsible-section
+    " style="transform: translate3d(0px, 0px, 0px);">
+                <div class="devsite-header-background">
+                    <div class="devsite-doc-set-nav-row">
+                        <devsite-tabs class="lower-tabs" connected="">
+
+                            <div class="devsite-tabs-wrapper">
+                                <tab active="">
+                                    <a href="/team-108/" class="gc-analytics-event" track-type="globalNav"
+                                       track-metadata-position="nav" track-metadata-eventdetail="nav" track-name="guides"
+                                       aria-label="Guides, selected" data-category="Site-Wide Custom Events"
+                                       data-label="Tab: Guides">
+                                        Bikelist
+                                    </a>
+
+                                </tab>
+                                <tab>
+                                    <a href="/team-108/browsing.html" class="gc-analytics-event" track-type="globalNav"
+                                       track-metadata-position="nav" track-metadata-eventdetail="nav" track-name="reference"
+                                       data-category="Site-Wide Custom Events" data-label="Tab: Reference">
+                                        Browse
+                                    </a>
+
+                                </tab>
+                                <tab>
+                                    <a href="/team-108/searching.html" class="gc-analytics-event" track-type="globalNav"
+                                       track-metadata-position="nav" track-metadata-eventdetail="nav" track-name="samples"
+                                       data-category="Site-Wide Custom Events" data-label="Tab: Samples">
+                                        Search
+                                    </a>
+
+                                </tab>
+                                <tab>
+                                    <a href="/team-108/cart.html" class="gc-analytics-event"
+                                       track-type="globalNav" track-metadata-position="nav" track-metadata-eventdetail="nav"
+                                       track-name="support" data-category="Site-Wide Custom Events"
+                                       data-label="Tab: Support">
+                                        Cart
+                                    </a>
+
+                                </tab>
+                                <tab>
+                                    <a href="/team-108/fullTextSearch.html" class="gc-analytics-event"
+                                       track-type="globalNav" track-metadata-position="nav" track-metadata-eventdetail="nav"
+                                       track-name="support" data-category="Site-Wide Custom Events"
+                                       data-label="Tab: Support">
+                                        Full Text Search
+                                    </a>
+
+                                </tab>
+
+
+                                <tab overflow-tab="" hidden=""><a href="#"
+                                                                  class="devsite-icon devsite-icon-arrow-drop-down">More</a>
+                                    <div class="devsite-tabs-overflow-menu" scrollbars="" hidden=""></div>
+                                </tab>
+
+
+                            </div>
+                        </devsite-tabs>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </devsite-header></div>
+<br>
+<div class="main" align="center" style="width: 600px;horiz-align: center;margin-left: auto;margin-right: auto;">
+    <table align="center">
+        <col width="200" />
+        <col width="200" />
+        <th>browse by specific category</th><th>browse by product name order by</th>
+        <tr>
+            <td>
+                <a href="/team-108/index.html?category=Children Bicycles">Children Bicycles</a>
+            </td>
+            <td>
+                <a href="/team-108/index.html?sorted=+product_name;-rating">by name</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="/team-108/index.html?category=Comfort Bicycles">Comfort Bicycles</a>
+            </td>
+            <td>
+                <a href="/team-108/index.html?sorted=-rating;+product_name">by rating</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="/team-108/index.html?category=Cruisers Bicycles">Cruisers Bicycles</a>
+            </td>
+        </tr>
+        <tr><td><a href="/team-108/index.html?category=Cyclocross Bicycles">Cyclocross Bicycles</a></td></tr>
+        <tr><td><a href="/team-108/index.html?category=Electric Bikes">Electric Bikes</a></td></tr>
+        <tr><td><a href="/team-108/index.html?category=Mountain Bikes">Mountain Bikes</a></td></tr>
+        <tr><td><a href="/team-108/index.html?category=Road Bikes">Road Bikes</a></td></tr>
+        <tr><td><a href="/team-108/index.html?category=Time Trial Bikes">Time Trial Bikes</a></td></tr>
+        <tr><td><a href="/team-108/index.html?category=Trick Bikes">Trick Bikes</a></td></tr>
+        <tr><td><a href="/team-108/index.html?category=Commuting Bikes">Commuting Bikes</a></td></tr>
+        <tr><td><a href="/team-108/index.html?category=Track Bikes">Track Bikes</a></td></tr>
+        <tr><td><a href="/team-108/index.html?category=Tandems">Tandems</a></td></tr>
+        <tr><td><a href="/team-108/index.html?category=Adult Trikes">Adult Trikes</a></td></tr>
+        <tr><td><a href="/team-108/index.html?category=Folding Bike">Folding Bike</a></td></tr>
+        <tr><td><a href="/team-108/index.html?category=Recumbents">Recumbents</a></td></tr>
+    </table>
+    <p>product name that start with: </p>
+    <a href="/team-108/index.html?product_name=%2A%25">*</a>
+
+    <a href="/team-108/index.html?product_name=0%25">0</a>
+    <a href="/team-108/index.html?product_name=1%25">1</a>
+    <a href="/team-108/index.html?product_name=2%25">2</a>
+    <a href="/team-108/index.html?product_name=3%25">3</a>
+    <a href="/team-108/index.html?product_name=4%25">4</a>
+    <a href="/team-108/index.html?product_name=5%25">5</a>
+    <a href="/team-108/index.html?product_name=6%25">6</a>
+    <a href="/team-108/index.html?product_name=7%25">7</a>
+    <a href="/team-108/index.html?product_name=8%25">8</a>
+    <a href="/team-108/index.html?product_name=9%25">9</a>
+
+    <a href="/team-108/index.html?product_name=A%25">A</a>
+    <a href="/team-108/index.html?product_name=B%25">B</a>
+    <a href="/team-108/index.html?product_name=C%25">C</a>
+    <a href="/team-108/index.html?product_name=D%25">D</a>
+    <a href="/team-108/index.html?product_name=E%25">E</a>
+    <a href="/team-108/index.html?product_name=F%25">F</a>
+    <a href="/team-108/index.html?product_name=G%25">G</a>
+    <a href="/team-108/index.html?product_name=H%25">H</a>
+    <a href="/team-108/index.html?product_name=I%25">I</a>
+    <a href="/team-108/index.html?product_name=J%25">J</a>
+    <a href="/team-108/index.html?product_name=K%25">K</a>
+    <a href="/team-108/index.html?product_name=L%25">L</a>
+    <a href="/team-108/index.html?product_name=M%25">M</a>
+    <a href="/team-108/index.html?product_name=N%25">N</a>
+    <a href="/team-108/index.html?product_name=O%25">O</a>
+    <a href="/team-108/index.html?product_name=P%25">P</a>
+    <a href="/team-108/index.html?product_name=Q%25">Q</a>
+    <a href="/team-108/index.html?product_name=R%25">R</a>
+    <a href="/team-108/index.html?product_name=S%25">S</a>
+    <a href="/team-108/index.html?product_name=T%25">T</a>
+    <a href="/team-108/index.html?product_name=U%25">U</a>
+    <a href="/team-108/index.html?product_name=V%25">V</a>
+    <a href="/team-108/index.html?product_name=W%25">W</a>
+    <a href="/team-108/index.html?product_name=X%25">X</a>
+    <a href="/team-108/index.html?product_name=Y%25">Y</a>
+    <a href="/team-108/index.html?product_name=Z%25">Z</a>
+    <hr>
+</div>
+
+</body>
+</html>

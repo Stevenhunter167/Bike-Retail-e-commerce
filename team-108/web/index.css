@@ -1,0 +1,682 @@
+/* table {
+    border: 1px solid #000000;
+} */
+
+/* 
+tbody {
+    animation-delay: 0s; animation-direction: normal; animation-duration: 0s; animation-fill-mode: none; animation-iteration-count: 1; animation-name: none; animation-play-state: running; animation-timing-function: ease; background-attachment: scroll; background-blend-mode: normal; background-clip: border-box; background-color: rgb(255, 255, 255); background-image: none; background-origin: padding-box; background-position: 0% 0%; background-repeat: repeat; background-size: auto; border-bottom-color: rgb(95, 99, 104); border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; border-bottom-style: none; border-bottom-width: 0px; border-collapse: collapse; border-image-outset: 0px; border-image-repeat: stretch; border-image-slice: 100%; border-image-source: none; border-image-width: 1; border-left-color: rgb(95, 99, 104); border-left-style: none; border-left-width: 0px; border-right-color: rgb(95, 99, 104); border-right-style: none; border-right-width: 0px; border-top-color: rgb(95, 99, 104); border-top-left-radius: 0px; border-top-right-radius: 0px; border-top-style: none; border-top-width: 0px; bottom: auto; box-shadow: none; box-sizing: content-box; break-after: auto; break-before: auto; break-inside: auto; caption-side: top; clear: none; clip: auto; color: rgb(95, 99, 104); content: normal; cursor: auto; direction: ltr; display: table-cell; empty-cells: show; float: none; font-family: Roboto, Arial, sans-serif; font-kerning: auto; font-optical-sizing: auto; font-size: 12px; font-stretch: 100%; font-style: normal; font-variant: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: 400; height: 16px; image-rendering: auto; isolation: auto; justify-items: normal; justify-self: auto; left: auto; letter-spacing: 0.3px; line-height: 16px; list-style-image: none; list-style-position: outside; list-style-type: disc; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; max-height: none; max-width: none; min-height: 0px; min-width: 100%; mix-blend-mode: normal; object-fit: fill; object-position: 50% 50%; offset-distance: 0px; offset-path: none; offset-rotate: auto 0deg; opacity: 1; orphans: 2; outline-color: rgb(95, 99, 104); outline-offset: 0px; outline-style: none; outline-width: 0px; overflow-anchor: auto; overflow-wrap: normal; overflow-x: visible; overflow-y: visible; padding-bottom: 12px; padding-left: 0px; padding-right: 16px; padding-top: 12px; pointer-events: auto; position: sticky; resize: none; right: auto; scroll-behavior: auto; speak: normal; table-layout: auto; tab-size: 8; text-align: left; text-align-last: auto; text-decoration: none solid rgb(95, 99, 104); text-decoration-line: none; text-decoration-style: solid; text-decoration-color: rgb(95, 99, 104); text-decoration-skip-ink: auto; text-underline-position: auto; text-indent: 0px; text-rendering: auto; text-shadow: none; text-size-adjust: 100%; text-overflow: clip; text-transform: none; top: -2px; touch-action: auto; transition-delay: 0s; transition-duration: 0s; transition-property: all; transition-timing-function: ease; unicode-bidi: normal; vertical-align: middle; visibility: visible; white-space: nowrap; widows: 2; width: 260px; will-change: auto; word-break: normal; word-spacing: 0px; z-index: 1; zoom: 1; -webkit-appearance: none; backface-visibility: visible; -webkit-border-horizontal-spacing: 0px; -webkit-border-image: none; -webkit-border-vertical-spacing: 0px; -webkit-box-align: stretch; -webkit-box-decoration-break: slice; -webkit-box-direction: normal; -webkit-box-flex: 0; -webkit-box-ordinal-group: 1; -webkit-box-orient: horizontal; -webkit-box-pack: start; -webkit-box-reflect: none; column-count: auto; column-gap: normal; column-rule-color: rgb(95, 99, 104); column-rule-style: none; column-rule-width: 0px; column-span: none; column-width: auto; backdrop-filter: none; align-content: normal; align-items: normal; align-self: auto; flex-basis: auto; flex-grow: 0; flex-shrink: 1; flex-direction: row; flex-wrap: nowrap; justify-content: normal; -webkit-font-smoothing: antialiased; grid-auto-columns: auto; grid-auto-flow: row; grid-auto-rows: auto; grid-column-end: auto; grid-column-start: auto; grid-template-areas: none; grid-template-columns: none; grid-template-rows: none; grid-row-end: auto; grid-row-start: auto; row-gap: normal; -webkit-highlight: none; hyphens: manual; -webkit-hyphenate-character: auto; -webkit-line-break: auto; -webkit-line-clamp: none; -webkit-locale: "en"; -webkit-margin-before-collapse: collapse; -webkit-margin-after-collapse: collapse; -webkit-mask-box-image: none; -webkit-mask-box-image-outset: 0px; -webkit-mask-box-image-repeat: stretch; -webkit-mask-box-image-slice: 0 fill; -webkit-mask-box-image-source: none; -webkit-mask-box-image-width: auto; -webkit-mask-clip: border-box; -webkit-mask-composite: source-over; -webkit-mask-image: none; -webkit-mask-origin: border-box; -webkit-mask-position: 0% 0%; -webkit-mask-repeat: repeat; -webkit-mask-size: auto; order: 0; perspective: none; perspective-origin: 138px 20.5px; -webkit-print-color-adjust: economy; -webkit-rtl-ordering: logical; shape-outside: none; shape-image-threshold: 0; shape-margin: 0px; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); -webkit-text-combine: none; -webkit-text-decorations-in-effect: none; -webkit-text-emphasis-color: rgb(95, 99, 104); -webkit-text-emphasis-position: over right; -webkit-text-emphasis-style: none; -webkit-text-fill-color: rgb(95, 99, 104); -webkit-text-orientation: vertical-right; -webkit-text-security: none; -webkit-text-stroke-color: rgb(95, 99, 104); -webkit-text-stroke-width: 0px; transform: none; transform-origin: 138px 20.5px; transform-style: flat; -webkit-user-drag: auto; -webkit-user-modify: read-only; user-select: auto; -webkit-writing-mode: horizontal-tb; -webkit-app-region: none; buffered-rendering: auto; clip-path: none; clip-rule: nonzero; mask: none; filter: none; flood-color: rgb(0, 0, 0); flood-opacity: 1; lighting-color: rgb(255, 255, 255); stop-color: rgb(0, 0, 0); stop-opacity: 1; color-interpolation: srgb; color-interpolation-filters: linearrgb; color-rendering: auto; fill: rgb(0, 0, 0); fill-opacity: 1; fill-rule: nonzero; marker-end: none; marker-mid: none; marker-start: none; mask-type: luminance; shape-rendering: auto; stroke: none; stroke-dasharray: none; stroke-dashoffset: 0px; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 1px; alignment-baseline: auto; baseline-shift: 0px; dominant-baseline: auto; text-anchor: start; writing-mode: horizontal-tb; vector-effect: none; paint-order: normal; d: none; cx: 0px; cy: 0px; x: 0px; y: 0px; r: 0px; rx: auto; ry: auto; caret-color: rgb(95, 99, 104); line-break: auto;
+} */
+
+/* tr {
+    animation-delay: 0s; animation-direction: normal; animation-duration: 0s; animation-fill-mode: none; animation-iteration-count: 1; animation-name: none; animation-play-state: running; animation-timing-function: ease; background-attachment: scroll; background-blend-mode: normal; background-clip: border-box; background-color: rgb(255, 255, 255); background-image: none; background-origin: padding-box; background-position: 0% 0%; background-repeat: repeat; background-size: auto; border-bottom-color: rgb(95, 99, 104); border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; border-bottom-style: none; border-bottom-width: 0px; border-collapse: collapse; border-image-outset: 0px; border-image-repeat: stretch; border-image-slice: 100%; border-image-source: none; border-image-width: 1; border-left-color: rgb(95, 99, 104); border-left-style: none; border-left-width: 0px; border-right-color: rgb(95, 99, 104); border-right-style: none; border-right-width: 0px; border-top-color: rgb(95, 99, 104); border-top-left-radius: 0px; border-top-right-radius: 0px; border-top-style: none; border-top-width: 0px; bottom: auto; box-shadow: none; box-sizing: content-box; break-after: auto; break-before: auto; break-inside: auto; caption-side: top; clear: none; clip: auto; color: rgb(95, 99, 104); content: normal; cursor: auto; direction: ltr; display: table-cell; empty-cells: show; float: none; font-family: Roboto, Arial, sans-serif; font-kerning: auto; font-optical-sizing: auto; font-size: 12px; font-stretch: 100%; font-style: normal; font-variant: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: 400; height: 16px; image-rendering: auto; isolation: auto; justify-items: normal; justify-self: auto; left: auto; letter-spacing: 0.3px; line-height: 16px; list-style-image: none; list-style-position: outside; list-style-type: disc; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; max-height: none; max-width: none; min-height: 0px; min-width: 100%; mix-blend-mode: normal; object-fit: fill; object-position: 50% 50%; offset-distance: 0px; offset-path: none; offset-rotate: auto 0deg; opacity: 1; orphans: 2; outline-color: rgb(95, 99, 104); outline-offset: 0px; outline-style: none; outline-width: 0px; overflow-anchor: auto; overflow-wrap: normal; overflow-x: visible; overflow-y: visible; padding-bottom: 12px; padding-left: 0px; padding-right: 16px; padding-top: 12px; pointer-events: auto; position: sticky; resize: none; right: auto; scroll-behavior: auto; speak: normal; table-layout: auto; tab-size: 8; text-align: left; text-align-last: auto; text-decoration: none solid rgb(95, 99, 104); text-decoration-line: none; text-decoration-style: solid; text-decoration-color: rgb(95, 99, 104); text-decoration-skip-ink: auto; text-underline-position: auto; text-indent: 0px; text-rendering: auto; text-shadow: none; text-size-adjust: 100%; text-overflow: clip; text-transform: none; top: -2px; touch-action: auto; transition-delay: 0s; transition-duration: 0s; transition-property: all; transition-timing-function: ease; unicode-bidi: normal; vertical-align: middle; visibility: visible; white-space: nowrap; widows: 2; width: 260px; will-change: auto; word-break: normal; word-spacing: 0px; z-index: 1; zoom: 1; -webkit-appearance: none; backface-visibility: visible; -webkit-border-horizontal-spacing: 0px; -webkit-border-image: none; -webkit-border-vertical-spacing: 0px; -webkit-box-align: stretch; -webkit-box-decoration-break: slice; -webkit-box-direction: normal; -webkit-box-flex: 0; -webkit-box-ordinal-group: 1; -webkit-box-orient: horizontal; -webkit-box-pack: start; -webkit-box-reflect: none; column-count: auto; column-gap: normal; column-rule-color: rgb(95, 99, 104); column-rule-style: none; column-rule-width: 0px; column-span: none; column-width: auto; backdrop-filter: none; align-content: normal; align-items: normal; align-self: auto; flex-basis: auto; flex-grow: 0; flex-shrink: 1; flex-direction: row; flex-wrap: nowrap; justify-content: normal; -webkit-font-smoothing: antialiased; grid-auto-columns: auto; grid-auto-flow: row; grid-auto-rows: auto; grid-column-end: auto; grid-column-start: auto; grid-template-areas: none; grid-template-columns: none; grid-template-rows: none; grid-row-end: auto; grid-row-start: auto; row-gap: normal; -webkit-highlight: none; hyphens: manual; -webkit-hyphenate-character: auto; -webkit-line-break: auto; -webkit-line-clamp: none; -webkit-locale: "en"; -webkit-margin-before-collapse: collapse; -webkit-margin-after-collapse: collapse; -webkit-mask-box-image: none; -webkit-mask-box-image-outset: 0px; -webkit-mask-box-image-repeat: stretch; -webkit-mask-box-image-slice: 0 fill; -webkit-mask-box-image-source: none; -webkit-mask-box-image-width: auto; -webkit-mask-clip: border-box; -webkit-mask-composite: source-over; -webkit-mask-image: none; -webkit-mask-origin: border-box; -webkit-mask-position: 0% 0%; -webkit-mask-repeat: repeat; -webkit-mask-size: auto; order: 0; perspective: none; perspective-origin: 138px 20.5px; -webkit-print-color-adjust: economy; -webkit-rtl-ordering: logical; shape-outside: none; shape-image-threshold: 0; shape-margin: 0px; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); -webkit-text-combine: none; -webkit-text-decorations-in-effect: none; -webkit-text-emphasis-color: rgb(95, 99, 104); -webkit-text-emphasis-position: over right; -webkit-text-emphasis-style: none; -webkit-text-fill-color: rgb(95, 99, 104); -webkit-text-orientation: vertical-right; -webkit-text-security: none; -webkit-text-stroke-color: rgb(95, 99, 104); -webkit-text-stroke-width: 0px; transform: none; transform-origin: 138px 20.5px; transform-style: flat; -webkit-user-drag: auto; -webkit-user-modify: read-only; user-select: auto; -webkit-writing-mode: horizontal-tb; -webkit-app-region: none; buffered-rendering: auto; clip-path: none; clip-rule: nonzero; mask: none; filter: none; flood-color: rgb(0, 0, 0); flood-opacity: 1; lighting-color: rgb(255, 255, 255); stop-color: rgb(0, 0, 0); stop-opacity: 1; color-interpolation: srgb; color-interpolation-filters: linearrgb; color-rendering: auto; fill: rgb(0, 0, 0); fill-opacity: 1; fill-rule: nonzero; marker-end: none; marker-mid: none; marker-start: none; mask-type: luminance; shape-rendering: auto; stroke: none; stroke-dasharray: none; stroke-dashoffset: 0px; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 1px; alignment-baseline: auto; baseline-shift: 0px; dominant-baseline: auto; text-anchor: start; writing-mode: horizontal-tb; vector-effect: none; paint-order: normal; d: none; cx: 0px; cy: 0px; x: 0px; y: 0px; r: 0px; rx: auto; ry: auto; caret-color: rgb(95, 99, 104); line-break: auto;
+} */
+
+/* td {
+    color: black;
+    animation-delay: 0s; animation-direction: normal; animation-duration: 0s; animation-fill-mode: none; animation-iteration-count: 1; animation-name: none; animation-play-state: running; animation-timing-function: ease; background-attachment: scroll; background-blend-mode: normal; background-clip: border-box; background-color: rgb(255, 255, 255); background-image: none; background-origin: padding-box; background-position: 0% 0%; background-repeat: repeat; background-size: auto; border-bottom-color: rgb(95, 99, 104); border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; border-bottom-style: none; border-bottom-width: 0px; border-collapse: collapse; border-image-outset: 0px; border-image-repeat: stretch; border-image-slice: 100%; border-image-source: none; border-image-width: 1; border-left-color: rgb(95, 99, 104); border-left-style: none; border-left-width: 0px; border-right-color: rgb(95, 99, 104); border-right-style: none; border-right-width: 0px; border-top-color: rgb(95, 99, 104); border-top-left-radius: 0px; border-top-right-radius: 0px; border-top-style: none; border-top-width: 0px; bottom: auto; box-shadow: none; box-sizing: content-box; break-after: auto; break-before: auto; break-inside: auto; caption-side: top; clear: none; clip: auto; color: rgb(95, 99, 104); content: normal; cursor: auto; direction: ltr; display: table-cell; empty-cells: show; float: none; font-family: Roboto, Arial, sans-serif; font-kerning: auto; font-optical-sizing: auto; font-size: 12px; font-stretch: 100%; font-style: normal; font-variant: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: 400; height: 16px; image-rendering: auto; isolation: auto; justify-items: normal; justify-self: auto; left: auto; letter-spacing: 0.3px; line-height: 16px; list-style-image: none; list-style-position: outside; list-style-type: disc; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; max-height: none; max-width: none; min-height: 0px; min-width: 100%; mix-blend-mode: normal; object-fit: fill; object-position: 50% 50%; offset-distance: 0px; offset-path: none; offset-rotate: auto 0deg; opacity: 1; orphans: 2; outline-color: rgb(95, 99, 104); outline-offset: 0px; outline-style: none; outline-width: 0px; overflow-anchor: auto; overflow-wrap: normal; overflow-x: visible; overflow-y: visible; padding-bottom: 12px; padding-left: 0px; padding-right: 16px; padding-top: 12px; pointer-events: auto; position: sticky; resize: none; right: auto; scroll-behavior: auto; speak: normal; table-layout: auto; tab-size: 8; text-align: left; text-align-last: auto; text-decoration: none solid rgb(95, 99, 104); text-decoration-line: none; text-decoration-style: solid; text-decoration-color: rgb(95, 99, 104); text-decoration-skip-ink: auto; text-underline-position: auto; text-indent: 0px; text-rendering: auto; text-shadow: none; text-size-adjust: 100%; text-overflow: clip; text-transform: none; top: -2px; touch-action: auto; transition-delay: 0s; transition-duration: 0s; transition-property: all; transition-timing-function: ease; unicode-bidi: normal; vertical-align: middle; visibility: visible; white-space: nowrap; widows: 2; width: 260px; will-change: auto; word-break: normal; word-spacing: 0px; z-index: 1; zoom: 1; -webkit-appearance: none; backface-visibility: visible; -webkit-border-horizontal-spacing: 0px; -webkit-border-image: none; -webkit-border-vertical-spacing: 0px; -webkit-box-align: stretch; -webkit-box-decoration-break: slice; -webkit-box-direction: normal; -webkit-box-flex: 0; -webkit-box-ordinal-group: 1; -webkit-box-orient: horizontal; -webkit-box-pack: start; -webkit-box-reflect: none; column-count: auto; column-gap: normal; column-rule-color: rgb(95, 99, 104); column-rule-style: none; column-rule-width: 0px; column-span: none; column-width: auto; backdrop-filter: none; align-content: normal; align-items: normal; align-self: auto; flex-basis: auto; flex-grow: 0; flex-shrink: 1; flex-direction: row; flex-wrap: nowrap; justify-content: normal; -webkit-font-smoothing: antialiased; grid-auto-columns: auto; grid-auto-flow: row; grid-auto-rows: auto; grid-column-end: auto; grid-column-start: auto; grid-template-areas: none; grid-template-columns: none; grid-template-rows: none; grid-row-end: auto; grid-row-start: auto; row-gap: normal; -webkit-highlight: none; hyphens: manual; -webkit-hyphenate-character: auto; -webkit-line-break: auto; -webkit-line-clamp: none; -webkit-locale: "en"; -webkit-margin-before-collapse: collapse; -webkit-margin-after-collapse: collapse; -webkit-mask-box-image: none; -webkit-mask-box-image-outset: 0px; -webkit-mask-box-image-repeat: stretch; -webkit-mask-box-image-slice: 0 fill; -webkit-mask-box-image-source: none; -webkit-mask-box-image-width: auto; -webkit-mask-clip: border-box; -webkit-mask-composite: source-over; -webkit-mask-image: none; -webkit-mask-origin: border-box; -webkit-mask-position: 0% 0%; -webkit-mask-repeat: repeat; -webkit-mask-size: auto; order: 0; perspective: none; perspective-origin: 138px 20.5px; -webkit-print-color-adjust: economy; -webkit-rtl-ordering: logical; shape-outside: none; shape-image-threshold: 0; shape-margin: 0px; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); -webkit-text-combine: none; -webkit-text-decorations-in-effect: none; -webkit-text-emphasis-color: rgb(95, 99, 104); -webkit-text-emphasis-position: over right; -webkit-text-emphasis-style: none; -webkit-text-fill-color: rgb(95, 99, 104); -webkit-text-orientation: vertical-right; -webkit-text-security: none; -webkit-text-stroke-color: rgb(95, 99, 104); -webkit-text-stroke-width: 0px; transform: none; transform-origin: 138px 20.5px; transform-style: flat; -webkit-user-drag: auto; -webkit-user-modify: read-only; user-select: auto; -webkit-writing-mode: horizontal-tb; -webkit-app-region: none; buffered-rendering: auto; clip-path: none; clip-rule: nonzero; mask: none; filter: none; flood-color: rgb(0, 0, 0); flood-opacity: 1; lighting-color: rgb(255, 255, 255); stop-color: rgb(0, 0, 0); stop-opacity: 1; color-interpolation: srgb; color-interpolation-filters: linearrgb; color-rendering: auto; fill: rgb(0, 0, 0); fill-opacity: 1; fill-rule: nonzero; marker-end: none; marker-mid: none; marker-start: none; mask-type: luminance; shape-rendering: auto; stroke: none; stroke-dasharray: none; stroke-dashoffset: 0px; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 1px; alignment-baseline: auto; baseline-shift: 0px; dominant-baseline: auto; text-anchor: start; writing-mode: horizontal-tb; vector-effect: none; paint-order: normal; d: none; cx: 0px; cy: 0px; x: 0px; y: 0px; r: 0px; rx: auto; ry: auto; caret-color: rgb(95, 99, 104); line-break: auto;
+    animation-delay: 0s; animation-direction: normal; animation-duration: 0s; animation-fill-mode: none; animation-iteration-count: 1; animation-name: none; animation-play-state: running; animation-timing-function: ease; background-attachment: scroll; background-blend-mode: normal; background-clip: border-box; background-color: rgb(255, 255, 255); background-image: none; background-origin: padding-box; background-position: 0% 0%; background-repeat: repeat; background-size: auto; border-bottom-color: rgb(95, 99, 104); border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; border-bottom-style: none; border-bottom-width: 0px; border-collapse: collapse; border-image-outset: 0px; border-image-repeat: stretch; border-image-slice: 100%; border-image-source: none; border-image-width: 1; border-left-color: rgb(95, 99, 104); border-left-style: none; border-left-width: 0px; border-right-color: rgb(95, 99, 104); border-right-style: none; border-right-width: 0px; border-top-color: rgb(95, 99, 104); border-top-left-radius: 0px; border-top-right-radius: 0px; border-top-style: none; border-top-width: 0px; bottom: auto; box-shadow: none; box-sizing: content-box; break-after: auto; break-before: auto; break-inside: auto; caption-side: top; clear: none; clip: auto; color: rgb(95, 99, 104); content: normal; cursor: auto; direction: ltr; display: table-cell; empty-cells: show; float: none; font-family: Roboto, Arial, sans-serif; font-kerning: auto; font-optical-sizing: auto; font-size: 12px; font-stretch: 100%; font-style: normal; font-variant: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: 400; height: 16px; image-rendering: auto; isolation: auto; justify-items: normal; justify-self: auto; left: auto; letter-spacing: 0.3px; line-height: 16px; list-style-image: none; list-style-position: outside; list-style-type: disc; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; max-height: none; max-width: none; min-height: 0px; min-width: 100%; mix-blend-mode: normal; object-fit: fill; object-position: 50% 50%; offset-distance: 0px; offset-path: none; offset-rotate: auto 0deg; opacity: 1; orphans: 2; outline-color: rgb(95, 99, 104); outline-offset: 0px; outline-style: none; outline-width: 0px; overflow-anchor: auto; overflow-wrap: normal; overflow-x: visible; overflow-y: visible; padding-bottom: 12px; padding-left: 0px; padding-right: 16px; padding-top: 12px; pointer-events: auto; position: sticky; resize: none; right: auto; scroll-behavior: auto; speak: normal; table-layout: auto; tab-size: 8; text-align: left; text-align-last: auto; text-decoration: none solid rgb(95, 99, 104); text-decoration-line: none; text-decoration-style: solid; text-decoration-color: rgb(95, 99, 104); text-decoration-skip-ink: auto; text-underline-position: auto; text-indent: 0px; text-rendering: auto; text-shadow: none; text-size-adjust: 100%; text-overflow: clip; text-transform: none; top: -2px; touch-action: auto; transition-delay: 0s; transition-duration: 0s; transition-property: all; transition-timing-function: ease; unicode-bidi: normal; vertical-align: middle; visibility: visible; white-space: nowrap; widows: 2; width: 260px; will-change: auto; word-break: normal; word-spacing: 0px; z-index: 1; zoom: 1; -webkit-appearance: none; backface-visibility: visible; -webkit-border-horizontal-spacing: 0px; -webkit-border-image: none; -webkit-border-vertical-spacing: 0px; -webkit-box-align: stretch; -webkit-box-decoration-break: slice; -webkit-box-direction: normal; -webkit-box-flex: 0; -webkit-box-ordinal-group: 1; -webkit-box-orient: horizontal; -webkit-box-pack: start; -webkit-box-reflect: none; column-count: auto; column-gap: normal; column-rule-color: rgb(95, 99, 104); column-rule-style: none; column-rule-width: 0px; column-span: none; column-width: auto; backdrop-filter: none; align-content: normal; align-items: normal; align-self: auto; flex-basis: auto; flex-grow: 0; flex-shrink: 1; flex-direction: row; flex-wrap: nowrap; justify-content: normal; -webkit-font-smoothing: antialiased; grid-auto-columns: auto; grid-auto-flow: row; grid-auto-rows: auto; grid-column-end: auto; grid-column-start: auto; grid-template-areas: none; grid-template-columns: none; grid-template-rows: none; grid-row-end: auto; grid-row-start: auto; row-gap: normal; -webkit-highlight: none; hyphens: manual; -webkit-hyphenate-character: auto; -webkit-line-break: auto; -webkit-line-clamp: none; -webkit-locale: "en"; -webkit-margin-before-collapse: collapse; -webkit-margin-after-collapse: collapse; -webkit-mask-box-image: none; -webkit-mask-box-image-outset: 0px; -webkit-mask-box-image-repeat: stretch; -webkit-mask-box-image-slice: 0 fill; -webkit-mask-box-image-source: none; -webkit-mask-box-image-width: auto; -webkit-mask-clip: border-box; -webkit-mask-composite: source-over; -webkit-mask-image: none; -webkit-mask-origin: border-box; -webkit-mask-position: 0% 0%; -webkit-mask-repeat: repeat; -webkit-mask-size: auto; order: 0; perspective: none; perspective-origin: 138px 20.5px; -webkit-print-color-adjust: economy; -webkit-rtl-ordering: logical; shape-outside: none; shape-image-threshold: 0; shape-margin: 0px; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); -webkit-text-combine: none; -webkit-text-decorations-in-effect: none; -webkit-text-emphasis-color: rgb(95, 99, 104); -webkit-text-emphasis-position: over right; -webkit-text-emphasis-style: none; -webkit-text-fill-color: rgb(95, 99, 104); -webkit-text-orientation: vertical-right; -webkit-text-security: none; -webkit-text-stroke-color: rgb(95, 99, 104); -webkit-text-stroke-width: 0px; transform: none; transform-origin: 138px 20.5px; transform-style: flat; -webkit-user-drag: auto; -webkit-user-modify: read-only; user-select: auto; -webkit-writing-mode: horizontal-tb; -webkit-app-region: none; buffered-rendering: auto; clip-path: none; clip-rule: nonzero; mask: none; filter: none; flood-color: rgb(0, 0, 0); flood-opacity: 1; lighting-color: rgb(255, 255, 255); stop-color: rgb(0, 0, 0); stop-opacity: 1; color-interpolation: srgb; color-interpolation-filters: linearrgb; color-rendering: auto; fill: rgb(0, 0, 0); fill-opacity: 1; fill-rule: nonzero; marker-end: none; marker-mid: none; marker-start: none; mask-type: luminance; shape-rendering: auto; stroke: none; stroke-dasharray: none; stroke-dashoffset: 0px; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 1px; alignment-baseline: auto; baseline-shift: 0px; dominant-baseline: auto; text-anchor: start; writing-mode: horizontal-tb; vector-effect: none; paint-order: normal; d: none; cx: 0px; cy: 0px; x: 0px; y: 0px; r: 0px; rx: auto; ry: auto; caret-color: rgb(95, 99, 104); line-break: auto;
+} */
+
+/* .googletable {
+    animation-delay: 0s; animation-direction: normal; animation-duration: 0s; animation-fill-mode: none; animation-iteration-count: 1; animation-name: none; animation-play-state: running; animation-timing-function: ease; background-attachment: scroll; background-blend-mode: normal; background-clip: border-box; background-color: rgba(0, 0, 0, 0); background-image: none; background-origin: padding-box; background-position: 0% 0%; background-repeat: repeat; background-size: auto; border-bottom-color: rgba(0, 0, 0, 0.87); border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; border-bottom-style: none; border-bottom-width: 0px; border-collapse: separate; border-image-outset: 0px; border-image-repeat: stretch; border-image-slice: 100%; border-image-source: none; border-image-width: 1; border-left-color: rgba(0, 0, 0, 0.87); border-left-style: none; border-left-width: 0px; border-right-color: rgba(0, 0, 0, 0.87); border-right-style: none; border-right-width: 0px; border-top-color: rgba(0, 0, 0, 0.87); border-top-left-radius: 0px; border-top-right-radius: 0px; border-top-style: none; border-top-width: 0px; bottom: 0px; box-shadow: none; box-sizing: content-box; break-after: auto; break-before: auto; break-inside: auto; caption-side: top; clear: none; clip: auto; color: rgba(0, 0, 0, 0.87); content: normal; cursor: auto; direction: ltr; display: block; empty-cells: show; float: none; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-kerning: auto; font-optical-sizing: auto; font-size: 16px; font-stretch: 100%; font-style: normal; font-variant: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: 400; height: 500px; image-rendering: auto; isolation: auto; justify-items: normal; justify-self: auto; left: 0px; letter-spacing: normal; line-height: normal; list-style-image: none; list-style-position: outside; list-style-type: disc; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; max-height: none; max-width: none; min-height: 0px; min-width: 0px; mix-blend-mode: normal; object-fit: fill; object-position: 50% 50%; offset-distance: 0px; offset-path: none; offset-rotate: auto 0deg; opacity: 1; orphans: 2; outline-color: rgba(0, 0, 0, 0.87); outline-offset: 0px; outline-style: none; outline-width: 0px; overflow-anchor: auto; overflow-wrap: normal; overflow-x: visible; overflow-y: visible; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px; pointer-events: auto; position: relative; resize: none; right: 0px; scroll-behavior: auto; speak: normal; table-layout: auto; tab-size: 8; text-align: start; text-align-last: auto; text-decoration: none solid rgba(0, 0, 0, 0.87); text-decoration-line: none; text-decoration-style: solid; text-decoration-color: rgba(0, 0, 0, 0.87); text-decoration-skip-ink: auto; text-underline-position: auto; text-indent: 0px; text-rendering: auto; text-shadow: none; text-size-adjust: 100%; text-overflow: clip; text-transform: none; top: 0px; touch-action: auto; transition-delay: 0s; transition-duration: 0s; transition-property: all; transition-timing-function: ease; unicode-bidi: normal; vertical-align: baseline; visibility: visible; white-space: normal; widows: 2; width: 333px; will-change: auto; word-break: normal; word-spacing: 0px; z-index: auto; zoom: 1; -webkit-appearance: none; backface-visibility: visible; -webkit-border-horizontal-spacing: 0px; -webkit-border-image: none; -webkit-border-vertical-spacing: 0px; -webkit-box-align: stretch; -webkit-box-decoration-break: slice; -webkit-box-direction: normal; -webkit-box-flex: 0; -webkit-box-ordinal-group: 1; -webkit-box-orient: horizontal; -webkit-box-pack: start; -webkit-box-reflect: none; column-count: auto; column-gap: normal; column-rule-color: rgba(0, 0, 0, 0.87); column-rule-style: none; column-rule-width: 0px; column-span: none; column-width: auto; backdrop-filter: none; align-content: normal; align-items: normal; align-self: auto; flex-basis: auto; flex-grow: 0; flex-shrink: 1; flex-direction: row; flex-wrap: nowrap; justify-content: normal; -webkit-font-smoothing: antialiased; grid-auto-columns: auto; grid-auto-flow: row; grid-auto-rows: auto; grid-column-end: auto; grid-column-start: auto; grid-template-areas: none; grid-template-columns: none; grid-template-rows: none; grid-row-end: auto; grid-row-start: auto; row-gap: normal; -webkit-highlight: none; hyphens: manual; -webkit-hyphenate-character: auto; -webkit-line-break: auto; -webkit-line-clamp: none; -webkit-locale: "en"; -webkit-margin-before-collapse: collapse; -webkit-margin-after-collapse: collapse; -webkit-mask-box-image: none; -webkit-mask-box-image-outset: 0px; -webkit-mask-box-image-repeat: stretch; -webkit-mask-box-image-slice: 0 fill; -webkit-mask-box-image-source: none; -webkit-mask-box-image-width: auto; -webkit-mask-clip: border-box; -webkit-mask-composite: source-over; -webkit-mask-image: none; -webkit-mask-origin: border-box; -webkit-mask-position: 0% 0%; -webkit-mask-repeat: repeat; -webkit-mask-size: auto; order: 0; perspective: none; perspective-origin: 166.5px 250px; -webkit-print-color-adjust: economy; -webkit-rtl-ordering: logical; shape-outside: none; shape-image-threshold: 0; shape-margin: 0px; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); -webkit-text-combine: none; -webkit-text-decorations-in-effect: none; -webkit-text-emphasis-color: rgba(0, 0, 0, 0.87); -webkit-text-emphasis-position: over right; -webkit-text-emphasis-style: none; -webkit-text-fill-color: rgba(0, 0, 0, 0.87); -webkit-text-orientation: vertical-right; -webkit-text-security: none; -webkit-text-stroke-color: rgba(0, 0, 0, 0.87); -webkit-text-stroke-width: 0px; transform: none; transform-origin: 166.5px 250px; transform-style: flat; -webkit-user-drag: auto; -webkit-user-modify: read-only; user-select: auto; -webkit-writing-mode: horizontal-tb; -webkit-app-region: none; buffered-rendering: auto; clip-path: none; clip-rule: nonzero; mask: none; filter: none; flood-color: rgb(0, 0, 0); flood-opacity: 1; lighting-color: rgb(255, 255, 255); stop-color: rgb(0, 0, 0); stop-opacity: 1; color-interpolation: srgb; color-interpolation-filters: linearrgb; color-rendering: auto; fill: rgb(0, 0, 0); fill-opacity: 1; fill-rule: nonzero; marker-end: none; marker-mid: none; marker-start: none; mask-type: luminance; shape-rendering: auto; stroke: none; stroke-dasharray: none; stroke-dashoffset: 0px; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 1px; alignment-baseline: auto; baseline-shift: 0px; dominant-baseline: auto; text-anchor: start; writing-mode: horizontal-tb; vector-effect: none; paint-order: normal; d: none; cx: 0px; cy: 0px; x: 0px; y: 0px; r: 0px; rx: auto; ry: auto; caret-color: rgba(0, 0, 0, 0.87); line-break: auto;
+    animation-delay: 0s; animation-direction: normal; animation-duration: 0s; animation-fill-mode: none; animation-iteration-count: 1; animation-name: none; animation-play-state: running; animation-timing-function: ease; background-attachment: scroll; background-blend-mode: normal; background-clip: border-box; background-color: rgb(255, 255, 255); background-image: none; background-origin: padding-box; background-position: 0% 0%; background-repeat: repeat; background-size: auto; border-bottom-color: rgb(95, 99, 104); border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; border-bottom-style: none; border-bottom-width: 0px; border-collapse: collapse; border-image-outset: 0px; border-image-repeat: stretch; border-image-slice: 100%; border-image-source: none; border-image-width: 1; border-left-color: rgb(95, 99, 104); border-left-style: none; border-left-width: 0px; border-right-color: rgb(95, 99, 104); border-right-style: none; border-right-width: 0px; border-top-color: rgb(95, 99, 104); border-top-left-radius: 0px; border-top-right-radius: 0px; border-top-style: none; border-top-width: 0px; bottom: auto; box-shadow: none; box-sizing: content-box; break-after: auto; break-before: auto; break-inside: auto; caption-side: top; clear: none; clip: auto; color: rgb(95, 99, 104); content: normal; cursor: auto; direction: ltr; display: table-cell; empty-cells: show; float: none; font-family: Roboto, Arial, sans-serif; font-kerning: auto; font-optical-sizing: auto; font-size: 12px; font-stretch: 100%; font-style: normal; font-variant: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: 400; height: 16px; image-rendering: auto; isolation: auto; justify-items: normal; justify-self: auto; left: auto; letter-spacing: 0.3px; line-height: 16px; list-style-image: none; list-style-position: outside; list-style-type: disc; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; max-height: none; max-width: none; min-height: 0px; min-width: 100%; mix-blend-mode: normal; object-fit: fill; object-position: 50% 50%; offset-distance: 0px; offset-path: none; offset-rotate: auto 0deg; opacity: 1; orphans: 2; outline-color: rgb(95, 99, 104); outline-offset: 0px; outline-style: none; outline-width: 0px; overflow-anchor: auto; overflow-wrap: normal; overflow-x: visible; overflow-y: visible; padding-bottom: 12px; padding-left: 0px; padding-right: 16px; padding-top: 12px; pointer-events: auto; position: sticky; resize: none; right: auto; scroll-behavior: auto; speak: normal; table-layout: auto; tab-size: 8; text-align: left; text-align-last: auto; text-decoration: none solid rgb(95, 99, 104); text-decoration-line: none; text-decoration-style: solid; text-decoration-color: rgb(95, 99, 104); text-decoration-skip-ink: auto; text-underline-position: auto; text-indent: 0px; text-rendering: auto; text-shadow: none; text-size-adjust: 100%; text-overflow: clip; text-transform: none; top: -2px; touch-action: auto; transition-delay: 0s; transition-duration: 0s; transition-property: all; transition-timing-function: ease; unicode-bidi: normal; vertical-align: middle; visibility: visible; white-space: nowrap; widows: 2; width: 260px; will-change: auto; word-break: normal; word-spacing: 0px; z-index: 1; zoom: 1; -webkit-appearance: none; backface-visibility: visible; -webkit-border-horizontal-spacing: 0px; -webkit-border-image: none; -webkit-border-vertical-spacing: 0px; -webkit-box-align: stretch; -webkit-box-decoration-break: slice; -webkit-box-direction: normal; -webkit-box-flex: 0; -webkit-box-ordinal-group: 1; -webkit-box-orient: horizontal; -webkit-box-pack: start; -webkit-box-reflect: none; column-count: auto; column-gap: normal; column-rule-color: rgb(95, 99, 104); column-rule-style: none; column-rule-width: 0px; column-span: none; column-width: auto; backdrop-filter: none; align-content: normal; align-items: normal; align-self: auto; flex-basis: auto; flex-grow: 0; flex-shrink: 1; flex-direction: row; flex-wrap: nowrap; justify-content: normal; -webkit-font-smoothing: antialiased; grid-auto-columns: auto; grid-auto-flow: row; grid-auto-rows: auto; grid-column-end: auto; grid-column-start: auto; grid-template-areas: none; grid-template-columns: none; grid-template-rows: none; grid-row-end: auto; grid-row-start: auto; row-gap: normal; -webkit-highlight: none; hyphens: manual; -webkit-hyphenate-character: auto; -webkit-line-break: auto; -webkit-line-clamp: none; -webkit-locale: "en"; -webkit-margin-before-collapse: collapse; -webkit-margin-after-collapse: collapse; -webkit-mask-box-image: none; -webkit-mask-box-image-outset: 0px; -webkit-mask-box-image-repeat: stretch; -webkit-mask-box-image-slice: 0 fill; -webkit-mask-box-image-source: none; -webkit-mask-box-image-width: auto; -webkit-mask-clip: border-box; -webkit-mask-composite: source-over; -webkit-mask-image: none; -webkit-mask-origin: border-box; -webkit-mask-position: 0% 0%; -webkit-mask-repeat: repeat; -webkit-mask-size: auto; order: 0; perspective: none; perspective-origin: 138px 20.5px; -webkit-print-color-adjust: economy; -webkit-rtl-ordering: logical; shape-outside: none; shape-image-threshold: 0; shape-margin: 0px; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); -webkit-text-combine: none; -webkit-text-decorations-in-effect: none; -webkit-text-emphasis-color: rgb(95, 99, 104); -webkit-text-emphasis-position: over right; -webkit-text-emphasis-style: none; -webkit-text-fill-color: rgb(95, 99, 104); -webkit-text-orientation: vertical-right; -webkit-text-security: none; -webkit-text-stroke-color: rgb(95, 99, 104); -webkit-text-stroke-width: 0px; transform: none; transform-origin: 138px 20.5px; transform-style: flat; -webkit-user-drag: auto; -webkit-user-modify: read-only; user-select: auto; -webkit-writing-mode: horizontal-tb; -webkit-app-region: none; buffered-rendering: auto; clip-path: none; clip-rule: nonzero; mask: none; filter: none; flood-color: rgb(0, 0, 0); flood-opacity: 1; lighting-color: rgb(255, 255, 255); stop-color: rgb(0, 0, 0); stop-opacity: 1; color-interpolation: srgb; color-interpolation-filters: linearrgb; color-rendering: auto; fill: rgb(0, 0, 0); fill-opacity: 1; fill-rule: nonzero; marker-end: none; marker-mid: none; marker-start: none; mask-type: luminance; shape-rendering: auto; stroke: none; stroke-dasharray: none; stroke-dashoffset: 0px; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 1px; alignment-baseline: auto; baseline-shift: 0px; dominant-baseline: auto; text-anchor: start; writing-mode: horizontal-tb; vector-effect: none; paint-order: normal; d: none; cx: 0px; cy: 0px; x: 0px; y: 0px; r: 0px; rx: auto; ry: auto; caret-color: rgb(95, 99, 104); line-break: auto;
+} */
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+button.action{
+    z-index: -5;
+}
+
+.devsite-collapsible-section{
+    z-index: 2;
+    opacity: 1;
+}
+
+body {
+    height: 100%;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+    margin: 0;
+    text-size-adjust: 100%
+}
+
+textarea {
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif
+}
+
+a {
+    text-decoration: none;
+    color: #2962ff
+}
+
+img {
+    border: none
+}
+
+* {
+    -webkit-tap-highlight-color: transparent
+}
+
+#apps-debug-tracers {
+    display: none
+}
+
+html {
+    overflow: visible
+}
+
+body {
+    overflow: visible;
+    overflow-y: scroll
+}
+
+.kFwPee {
+    height: 100%
+}
+
+.ydMMEb {
+    width: 100%
+}
+
+.SSPGKf {
+    display: block;
+    overflow-y: hidden;
+    z-index: 1
+}
+
+.eejsDc {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch
+}
+
+.MCcOAc {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    z-index: 1
+}
+
+.MCcOAc > .pGxpHc {
+    flex-shrink: 0;
+    box-flex: 0;
+    flex-grow: 0
+}
+
+.IqBfM > .HLlAHb {
+    align-items: center;
+    display: flex;
+    height: 60px;
+    position: absolute;
+    right: 16px;
+    top: 0;
+    z-index: 9999
+}
+
+.VUoKZ {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    z-index: 1001
+}
+
+.TRHLAc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100%;
+    background: #68e;
+    transform: scaleX(0);
+    transform-origin: 0 0
+}
+
+.mIM26c .VUoKZ {
+    display: block
+}
+
+.mIM26c .TRHLAc {
+    animation: boqChromeapiPageProgressAnimation 1s infinite;
+    animation-timing-function: cubic-bezier(0.4, 0.0, 1, 1);
+    animation-delay: .1s
+}
+
+.ghyPEc .VUoKZ {
+    position: fixed
+}
+
+@keyframes boqChromeapiPageProgressAnimation {
+    0% {
+        transform: scaleX(0)
+    }
+    50% {
+        transform: scaleX(5)
+    }
+    to {
+        transform: scaleX(5) translateX(100%)
+    }
+}
+
+.GTWMxc {
+    width: 700px
+}
+
+.qI0mnb {
+    border-collapse: separate;
+    border-spacing: 2px;
+    margin-top: 24px;
+    width: 70%
+}
+
+.kjuqlc {
+    height: 12px
+}
+
+.XQ0tYd {
+    font-size: 10px;
+    padding: 0 2px
+}
+
+.J61Jbd {
+    width: 20%
+}
+
+.V9PNQc {
+    font-weight: bold
+}
+
+.gmFWS {
+    display: inline;
+    height: 20px;
+    margin-right: 4px;
+    max-width: 100%;
+    vertical-align: bottom;
+    width: 20px
+}
+
+.VYrgGf {
+    margin-top: 10px;
+    text-transform: lowercase
+}
+
+.xwihpc {
+    font-weight: bold
+}
+
+.qI0mnb {
+    color: #5f6368;
+    letter-spacing: .025em;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: .75rem;
+    font-weight: 400;
+    line-height: 1rem
+}
+
+@media (max-width: 415px) {
+    .qI0mnb {
+        width: 100%
+    }
+}
+
+.Pa0fR a {
+    color: #174ea6;
+    letter-spacing: .03125rem
+}
+
+.Pa0fR a:focus, .Pa0fR a:hover {
+    cursor: pointer;
+    outline: none;
+    text-decoration: underline
+}
+
+@media (forced-colors: active) {
+    .Pa0fR a {
+        color: #1a73e8
+    }
+}
+
+@media screen and (-ms-high-contrast: active) {
+    .Pa0fR a {
+        color: #1a73e8
+    }
+}
+
+.Jncg3b {
+    font-family: 'Google Sans', Roboto, Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 2rem
+}
+
+@media (max-width: 54.5rem) {
+    .xd8kN {
+        padding: 2.5rem 0 0
+    }
+
+    .Jncg3b {
+        font-family: 'Google Sans', Roboto, Arial, sans-serif;
+        font-size: 1.75rem;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 2.25rem
+    }
+}
+
+c-wiz {
+    contain: style
+}
+
+c-wiz > c-data {
+    display: none
+}
+
+c-wiz.rETSD {
+    contain: none
+}
+
+c-wiz.Ubi8Z {
+    contain: layout style
+}
+
+.XtZ9md {
+    grid-column: 1/3
+}
+
+.ysfX7e {
+    position: relative
+}
+
+.I5Zqqd {
+    max-height: 500px;
+    overflow: auto
+}
+
+.SAGQRd {
+    letter-spacing: .01428571em;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    border-radius: 4px;
+    border-top: none;
+    box-sizing: border-box;
+    overflow-x: auto;
+    text-decoration: inherit;
+    text-overflow: ellipsis;
+    min-width: 100%;
+    -webkit-overflow-scrolling: touch;
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+.A5V3jc {
+    border-top: 1px solid #dadce0;
+    position: relative;
+    margin-right: 16px
+}
+
+.qEfTDe .A5V3jc:last-child {
+    border-bottom: 1px solid #dadce0
+}
+
+.aiByXc, .uMsnNd {
+    text-align: left;
+    white-space: nowrap
+}
+
+.A5V3jc .aiByXc:first-child, .A5V3jc .uMsnNd:first-child {
+    padding-left: 0
+}
+
+.aiByXc {
+    background-color: #fff;
+    color: #5f6368;
+    letter-spacing: .025em;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: .75rem;
+    font-weight: 400;
+    line-height: 1rem;
+    min-width: 100%;
+    padding: 12px 16px;
+    position: sticky;
+    top: -2px;
+    z-index: 1
+}
+
+.uMsnNd {
+    color: #202124;
+    padding: 8px 16px
+}
+
+.HAChlc {
+    text-align: right
+}
+
+.uMsnNd.BL0BWd {
+    display: flex;
+    white-space: normal;
+    align-items: center;
+    min-width: 174px
+}
+
+.aiByXc.HAChlc .DdCLrb {
+    margin-left: auto
+}
+
+.Ceukx {
+    display: flex;
+    align-items: center
+}
+
+.DEnX2 {
+    display: inline;
+    height: 20px;
+    margin-right: 8px;
+    width: 20px;
+    vertical-align: middle;
+    max-width: 100%
+}
+
+.YatLgf {
+    padding-left: 28px
+}
+
+.WbQsab {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    display: none;
+    height: 100%;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 36px
+}
+
+@media (max-width: 800px) {
+    .A5V3jc .aiByXc:last-child, .A5V3jc .uMsnNd:last-child {
+        padding-right: 26px
+    }
+
+    .WbQsab {
+        display: block
+    }
+}
+
+.D9s3Oe, .FgXx3e {
+    margin: 16px 0
+}
+
+.nkfxXb {
+    letter-spacing: .00625em;
+    font-family: 'Google Sans', Roboto, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem
+}
+
+.RSqfmf {
+    letter-spacing: .01428571em;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.25rem
+}
+
+.H0TNqc {
+    color: #1a73e8
+}
+
+.mQTbyb {
+    margin-top: 1.25rem;
+    max-width: 1016px
+}
+
+.VOxXkf {
+    margin: 32px 0
+}
+
+@media (max-width: 54.5rem) {
+    .mQTbyb, .VOxXkf {
+        margin: 0
+    }
+}
+
+@media (max-width: 54.5rem) {
+    .VxN2Zc {
+        display: none
+    }
+}
+
+.reqYuf {
+    box-pack: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    display: flex
+}
+
+.reqYuf .SyRAoc, .reqYuf .SyRAoc:visited {
+    letter-spacing: .025em;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: .75rem;
+    font-weight: 400;
+    line-height: 1rem;
+    color: #5f6368;
+    margin: 0 8px;
+    text-decoration: none
+}
+
+.n184zd {
+    display: flex;
+    box-pack: space-evenly;
+    -webkit-box-pack: space-evenly;
+    justify-content: space-evenly
+}
+
+.reqYuf .SyRAoc:focus, .reqYuf .SyRAoc:hover {
+    color: #202124;
+    outline: none;
+    cursor: pointer;
+    text-decoration: underline
+}
+
+.VxN2Zc {
+    letter-spacing: .025em;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: .75rem;
+    font-weight: 400;
+    line-height: 1rem;
+    bottom: 0;
+    color: #5f6368;
+    position: fixed;
+    right: 0
+}
+
+.nJnAMd {
+    font-family: 'Google Sans', Roboto, Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 2.5rem;
+    max-width: 44.6875rem
+}
+
+.BVtMPe {
+    color: #5f6368;
+    letter-spacing: .025em;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: .75rem;
+    font-weight: 400;
+    line-height: 1rem
+}
+
+@media (max-width: 54.5rem) {
+    .nJnAMd {
+        margin: 16px 0
+    }
+}
+
+.b3t6we {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0 4rem;
+    margin-top: 3rem;
+    overflow: auto
+}
+
+.Umm3m {
+    background-color: #fff
+}
+
+.yQOtse {
+    box-pack: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    display: flex
+}
+
+.nHiRk {
+    box-pack: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    display: flex;
+    padding: 1.5rem
+}
+
+@media (max-width: 54.5rem) {
+    .b3t6we {
+        margin: 0;
+        padding: 0 24px
+    }
+}
+
+.T4LgNb {
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1
+}
+
+.QMEh5b {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3
+}
+
+.AOq4tb {
+    height: 56px
+}
+
+.kFwPee {
+    position: relative;
+    z-index: 1;
+    height: 100%
+}
+
+.ydMMEb {
+    height: 56px;
+    width: 100%
+}
+
+.SSPGKf {
+    overflow-y: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0
+}
+
+.ecJEib .AOq4tb, .ecJEib .ydMMEb {
+    height: 64px
+}
+
+.e2G3Fb.EWZcud .AOq4tb, .e2G3Fb.EWZcud .ydMMEb {
+    height: 48px
+}
+
+.e2G3Fb.b30Rkd .AOq4tb, .e2G3Fb.b30Rkd .ydMMEb {
+    height: 56px
+}
+
+.SSPGKf {
+    position: relative;
+    min-height: 100%
+}
+
+.SSPGKf.BIIBbc {
+    height: 100%;
+    overflow: hidden
+}
+
+.kFwPee {
+    backface-visibility: hidden;
+    min-height: 100%;
+    height: auto
+}
+
+.T4LgNb {
+    min-height: 100%;
+    position: relative
+}
+
+.T4LgNb.eejsDc {
+    min-height: 100%;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: auto
+}
+
+.QMEh5b {
+    position: fixed
+}
+
+sentinel {
+}
+
+
+.navbar {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the bottom of the page */
+    width: 100%; /* Full width */
+    background: white;
+    opacity: 1;
+}
+
+.search{
+    position: fixed;
+    right: 5px;
+}
+
+/* Main content */
+.main {
+    margin-top: 100px; /* Add a bottom margin to avoid content overlay */
+}
+
+.loading {
+    margin-top: 30px;
+}
+
+.dim {
+    opacity: 0.4;
+}
+
+.center {
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+}

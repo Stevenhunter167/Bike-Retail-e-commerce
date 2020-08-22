@@ -1,0 +1,5 @@
+rm /home/ubuntu/tomcat/webapps/team-108.war
+rm -rf /home/ubuntu/tomcat/webapps/team-108
+mvn clean package
+cp ./target/*.war /home/ubuntu/tomcat/webapps
+ls -lah /home/ubuntu/tomcat/webapps

@@ -1,0 +1,27 @@
+MovieDB dataset stats:
+{'creditcards': 517,
+ 'customers': 453,
+ 'genres': 23,
+ 'genres_in_movies': 15615,
+ 'movies': 9052,
+ 'ratings': 7998,
+ 'sales': 13555,
+ 'stars': 60150,
+ 'stars_in_movies': 79921,
+ 'total': 187284
+}
+
+BikeDB dataset stats:
+{'brands': 249,
+ 'categories': 15,
+ 'creditcards': 1445,
+ 'customers': 1445,
+ 'order_items': 84704,
+ 'orders': 5499,
+ 'products': 10281,
+ 'ratings': 10281,
+ 'staffs': 3897,
+ 'stocks': 93063,
+ 'stores': 621,
+ 'total': 211500
+}

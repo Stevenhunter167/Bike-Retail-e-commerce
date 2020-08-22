@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .alert {
+        position: relative;
+        padding: 0.75rem 1.25rem;
+        margin-bottom: 1rem;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+        max-width: fit-content;
+        }
+        .alert-link {
+        font-weight: 700;
+        }
+        .alert-primary {
+        color: #001421;
+        background-color: #cce0ed;
+        border-color: #b8d4e6;
+        }
+        .alert-primary .alert-link {
+        color: #000;
+        }
+        .alert-info {
+        color: #052025;
+        background-color: #d1ecf1;
+        border-color: #bee5eb;
+        }
+        .alert-info .alert-link {
+        color: #000;
+        }
+        .form-group {
+        margin-bottom: 1rem;
+        }
+        .form-text {
+        display: block;
+        margin-top: 0.25rem;
+        }
+        .form-check {
+        position: relative;
+        display: block;
+        padding-left: 1.25rem;
+        }
+        .form-check-input {
+        position: absolute;
+        margin-top: 0.3rem;
+        margin-left: -1.25rem;
+        }
+        .form-check-input:disabled ~ .form-check-label {
+        color: #6c757d;
+        }
+        .form-check-label {
+        margin-bottom: 0;
+        }
+        .h1,
+        .h2,
+        .h3,
+        .h4,
+        .h5,
+        .h6,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        line-height: 1.2;
+        }
+        .h1,
+        h1 {
+        font-size: 2.5rem;
+        }
+        @media (max-width: 1200px) {
+        .h1,
+        h1 {
+            font-size: calc(1.375rem + 1.5vw);
+        }
+        }
+        .h2,
+        h2 {
+        font-size: 2rem;
+        }
+        @media (max-width: 1200px) {
+        .h2,
+        h2 {
+            font-size: calc(1.325rem + 0.9vw);
+        }
+        }
+        .h3,
+        h3 {
+        font-size: 1.75rem;
+        }
+        @media (max-width: 767px) {
+        .h3,
+        h3 {
+            font-size: calc(1.3rem);
+        }
+        }
+        .h4,
+        h4 {
+        font-size: 1.5rem;
+        }
+        @media (max-width: 1200px) {
+        .h4,
+        h4 {
+            font-size: calc(1.275rem + 0.3vw);
+        }
+        }
+        .h5,
+        h5 {
+        font-size: 1.25rem;
+        }
+        .h6,
+        h6 {
+        font-size: 1rem;
+        }
+        .display-1 {
+        font-size: 6rem;
+        font-weight: 300;
+        line-height: 1.2;
+        }
+        @media (max-width: 1200px) {
+        .display-1 {
+            font-size: calc(1.725rem + 5.7vw);
+        }
+        }
+        .display-2 {
+        font-size: 5.5rem;
+        font-weight: 300;
+        line-height: 1.2;
+        }
+        @media (max-width: 1200px) {
+        .display-2 {
+            font-size: calc(1.675rem + 5.1vw);
+        }
+        }
+        .display-3 {
+        font-size: 4.5rem;
+        font-weight: 300;
+        line-height: 1.2;
+        }
+        @media (max-width: 1200px) {
+        .display-3 {
+            font-size: calc(1.575rem + 3.9vw);
+        }
+        }
+        .display-4 {
+        font-size: 3.5rem;
+        font-weight: 300;
+        line-height: 1.2;
+        }
+        @media (max-width: 1200px) {
+        .display-4 {
+            font-size: calc(1.475rem + 2.7vw);
+        }
+        }
+        .small,
+        small {
+        font-size: 80%;
+        font-weight: 400;
+        }
+        .btn {
+        display: inline-block;
+        font-weight: 400;
+        color: #212529;
+        text-align: center;
+        vertical-align: middle;
+        user-select: none;
+        background-color: transparent;
+        border: 1px solid transparent;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: 0.25rem;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+            border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+        @media (prefers-reduced-motion: reduce) {
+        .btn {
+            transition: none;
+        }
+        }
+        .btn:hover {
+        color: #212529;
+        text-decoration: none;
+        }
+        .btn.focus,
+        .btn:focus {
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(0, 100, 164, 0.25);
+        }
+        .btn.disabled,
+        .btn:disabled {
+        opacity: 0.65;
+        }
+        a.btn.disabled {
+        pointer-events: none;
+        }
+        .btn-primary {
+        color: #fff;
+        background-color: #0064a4;
+        border-color: #0064a4;
+        }
+        .btn-primary:hover {
+        color: #fff;
+        background-color: #004d7e;
+        border-color: #004571;
+        }
+        .btn-primary.focus,
+        .btn-primary:focus {
+        box-shadow: 0 0 0 0.2rem rgba(38, 123, 178, 0.5);
+        }
+        .btn-primary.disabled,
+        .btn-primary:disabled {
+        color: #fff;
+        background-color: #0064a4;
+        border-color: #0064a4;
+        }
+        .btn-primary:not(:disabled):not(.disabled):active {
+        color: #fff;
+        background-color: #004571;
+        border-color: #003d64;
+        }
+        .btn-primary:not(:disabled):not(.disabled):active:focus {
+        box-shadow: 0 0 0 0.2rem rgba(38, 123, 178, 0.5);
+        }
+        .btn-info {
+        color: #fff;
+        background-color: #17a2b8;
+        border-color: #17a2b8;
+        }
+        .btn-info:hover {
+        color: #fff;
+        background-color: #138496;
+        border-color: #117a8b;
+        }
+        .btn-info.focus,
+        .btn-info:focus {
+        box-shadow: 0 0 0 0.2rem rgba(58, 176, 195, 0.5);
+        }
+        .btn-info.disabled,
+        .btn-info:disabled {
+        color: #fff;
+        background-color: #17a2b8;
+        border-color: #17a2b8;
+        }
+        .btn-info:not(:disabled):not(.disabled):active {
+        color: #fff;
+        background-color: #117a8b;
+        border-color: #10707f;
+        }
+        .btn-info:not(:disabled):not(.disabled):active:focus {
+        box-shadow: 0 0 0 0.2rem rgba(58, 176, 195, 0.5);
+        }
+        .btn-link {
+        font-weight: 400;
+        color: #0064a4;
+        text-decoration: none;
+        }
+        .btn-link:hover {
+        color: #003558;
+        text-decoration: underline;
+        }
+        .btn-link.focus,
+        .btn-link:focus {
+        text-decoration: underline;
+        box-shadow: none;
+        }
+        .btn-link.disabled,
+        .btn-link:disabled {
+        color: #6c757d;
+        pointer-events: none;
+        }
+        .btn-lg {
+        padding: 0.5rem 1rem;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        border-radius: 0.3rem;
+        }
+        .btn-block {
+        display: block;
+        width: 100%;
+        }
+        .btn-block + .btn-block {
+        margin-top: 0.5rem;
+        }
+        input[type="button"].btn-block,
+        input[type="reset"].btn-block,
+        input[type="submit"].btn-block {
+        width: 100%;
+        }
+        .input-group {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        width: 100%;
+        margin-bottom: -1em;
+        }
+        .input-group-text {
+        display: flex;
+        align-items: center;
+        padding: 0.375rem 0.75rem;
+        margin-bottom: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        text-align: center;
+        white-space: nowrap;
+        background-color: #e9ecef;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        }
+        .input-group-text input[type="checkbox"],
+        .input-group-text input[type="radio"] {
+        margin-top: 0;
+        }
+        * {
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        .login-btn {
+        color: #0064a4;
+        background-color: #ffd200;
+        border: #ffd200;
+        margin-bottom: 16px;
+        }
+        .logout-btn {
+        padding: 12px 25px 12px 25px;
+        height: 50px;
+        width: 100%;
+        }
+        @media (max-width: 767.98px) {
+        .logout-btn {
+            padding: 13px 12px 13px 12px;
+            margin-left: 5px;
+            font-size: 0.875rem;
+            border-radius: 0.2rem;
+        }
+        }
+        .webauth-body {
+        display: flex;
+        height: 100vh;
+        background-color: #f4f4f4;
+        }
+        .login-form {
+        padding: 24px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        padding-bottom: 5px;
+        }
+
+
+        @media (min-width: 768px) {
+        .login-form {
+            padding: 32px;
+            min-width: 500px;
+        }
+        }
+        .webauth {
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0 0 14px 6px rgba(0, 0, 0, 0.12);
+        }
+        .webauth-login {
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #f4f4f4;
+        }
+        .login-form-title {
+        text-align: center;
+        padding-bottom: 10px;
+        }
+
+        .logo {
+        width: 80px;
+        }
+        @media (min-width: 576px) {
+        .logo {
+            width: 120px;
+        }
+        }
+        .footer {
+        padding-top: 30px;
+        }
+        @media (min-width: 768px) {
+        .footer {
+            padding-top: 60px;
+        }
+        }
+        .webauth-card {
+        max-width: 500px;
+        }
+        .title h2 {
+        color: #0064a4;
+        }
+        .content {
+        font-size: 16px;
+        margin: 0;
+        }
+        .webauth-alert {
+        font-size: 0.8rem;
+        min-width: 100%;
+        }
+        @media (min-width: 576px) {
+        .webauth-alert {
+            font-size: 0.875rem;
+        }
+        }
+        .wordmark-logo {
+        max-width: 250px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        }
+        @media (min-width: 768px) and (min-height: 700px) {
+        .wordmark-logo {
+            min-width: 400px;
+            padding-bottom: 60px;
+        }
+        }
+        .wordmark-link {
+        max-width: 400px;
+        }
+        @media (min-width: 768px) and (min-height: 700px) {
+        .wordmark-link {
+            min-width: 400px;
+        }
+        }
+        .flex-container {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 15px;
+        }
+        @media (min-width: 576px) {
+        .flex-container.webauth {
+            max-width: 250px;
+        }
+        }
+        @media (min-width: 768px) {
+        .flex-container.webauth {
+            max-width: 500px;
+        }
+        }
+        input {
+        box-sizing: border-box;
+        width: 100%;
+        height: calc(3em + 2px);
+        margin: 0 0 1em;
+        padding: 1em;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background: #fff;
+        resize: none;
+        outline: 0;
+        }
+
+        .login-input:focus {
+        border-color: #0064a4;
+        }
+        .login-input:focus + .moving-placeholder:before {
+        color: #0064a4;
+        -webkit-transform: translate(0, -1.5em) scale(0.9, 0.9);
+        -ms-transform: translate(0, -1.5em) scale(0.9, 0.9);
+        transform: translate(0, -1.5em) scale(0.9, 0.9);
+        }
+
+        .login-input:not([value=""]) + .moving-placeholder:before {
+        -webkit-transform: translate(0, -1.5em) scale(0.9, 0.9);
+        -ms-transform: translate(0, -1.5em) scale(0.9, 0.9);
+        transform: translate(0, -1.5em) scale(0.9, 0.9);
+        }
+
+        .login-input:disabled + .moving-placeholder:before {
+        -webkit-transform: translate(0, -1.5em) scale(0.9, 0.9);
+        -ms-transform: translate(0, -1.5em) scale(0.9, 0.9);
+        transform: translate(0, -1.5em) scale(0.9, 0.9);
+        }
+
+        .is-autofilled + .moving-placeholder:before {
+        -webkit-transform: translate(0, -1.5em) scale(0.9, 0.9);
+        -ms-transform: translate(0, -1.5em) scale(0.9, 0.9);
+        transform: translate(0, -1.5em) scale(0.9, 0.9);
+        }
+
+        .login-input:invalid + .moving-placeholder[alt]:before {
+        content: attr(alt);
+        }
+        .login-input + .moving-placeholder {
+        display: block;
+        pointer-events: none;
+        line-height: 1.25em;
+        margin-top: calc(-3em - 2px);
+        margin-bottom: calc((3em - 1em));
+        }
+
+
+        .login-input + .moving-placeholder:before {
+        content: attr(data-text);
+        display: inline-block;
+        margin: 0 calc(1em + 2px);
+        padding: 0 4px;
+        color: #898989;
+        white-space: nowrap;
+        border-radius: 5px;
+        background-color: #fff;
+        }
+
+        .moving-placeholder[data-text="Password"] {
+            margin-bottom: 18px;
+        } 
+        .webauth-links {
+        text-align: center;
+        line-height: 24px;
+        margin-bottom: 0;
+        }
+        .nojs-margin {
+        margin-bottom: 30px;
+        }
+
+        .duo {
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0 0 14px 6px rgba(0, 0, 0, 0.12);
+        padding: 8px;
+        background-color: #f7f7f7;
+        margin: -7px;
+        }
+        .duo-card {
+        width: 50vw;
+        min-width: 300px;
+        max-width: 650px;
+        }
+        .duo-wrapper {
+        overflow: hidden;
+        height: 350px;
+        border-radius: 0 0 5px 5px;
+        }
+        .duo-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 10px 0 10px;
+        color: #666;
+        }
+        iframe#duo_iframe {
+        transform: translateY(-1px) translateX(-1px);
+        }
+        @media (max-width: 995px) {
+        .logout-button {
+            max-width: 105px;
+        }
+        }
+        .logout-button {
+        width: 160px;
+        font-size: 14px;
+        padding: 8px 12px 8px 12px;
+        }
+        #duo_iframe {
+        margin: -1px;
+        }
+        .duo-message {
+        display: block;
+        padding: 8px;
+        }
+        .logged-in {
+        width: 73%;
+        margin-right: 2%;
+        }
+
+        input:-internal-autofill-selected{
+        font-size: 16px;
+        }
+
+        .logged-in input[type="text"] {
+        width: 100%;
+        background-color: #f7f7f7;
+        }
+        .logged-in-logout-button {
+        width: 25%;
+        padding: 0;
+        }
+        #username-div {
+        margin-bottom: 0;
+        }
+        .noscript-message {
+        display: block;
+        padding: 10px;
+        }
+        .alert-warning {
+        color: #332701;
+        background-color: #fff3cd;
+        border-color: #ffeeba;
+        }
+        .alert-warning hr {
+        border-top-color: #ffe8a1;
+        }
+        .alert-warning .alert-link {
+        color: #010100;
+        }
+        .alert-danger {
+        color: #2c0b0e;
+        background-color: #f8d7da;
+        border-color: #f5c6cb;
+        }
+        .alert-danger hr {
+        border-top-color: #f1b0b7;
+        }
+        .alert-danger .alert-link {
+        color: #030101;
+        }
+
+        @keyframes onAutoFillStart {  from {/**/}  to {/**/}}
+        @keyframes onAutoFillCancel {  from {/**/}  to {/**/}}
+
+        input:-webkit-autofill {
+            animation-name: onAutoFillStart;
+            transition: background-color 50000s ease-in-out 0s;
+        }
+
+        input:not(:-webkit-autofill) {
+            animation-name: onAutoFillCancel;
+        }
+
+        .not-logged-in {
+        width: 100%;
+        }
+
+        input {
+        filter: none
+        }
+    </style>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body style="background-color: lightgray;">
+<div style="margin-top: 150px;"><div id="login-form" class="login-form" style="margin: auto; width: 20%; 
+vertical-align: auto; border-radius: 20px;
+box-shadow: 0px 0px 30px grey;
+background-color: white;">
+    <h1 class="h3 login-form-title">Login to Fablix Bikes</h1>
+    <div class="alert-danger webauth-alert" style="display:block;visibility: hidden;text-align: center;border-radius: 8px;" id="status" role="alert">Invalid email or password. Please try again. </div>
+    <form id="webauth_login_form_id" name="webauth_login_form" style="margin-top: 50px;">
+        <div class="form-group">
+            <div class="input-group">
+                <div class="not-logged-in">
+                    <input style="height: 48px; font-size: large;" spellcheck="false" autocapitalize="off" id="email"
+                        class="login-input" tabindex="1" aria-required="true" aria-label="U-C-I-net-I-D" type="text"
+                        name="email" maxlength="64" value="" onblur="this.placeholder=&quot;&quot;"
+                        oninput="this.setAttribute('value', this.value);" 
+                        onkeyup="this.setAttribute('value', this.value);" 
+                        onfocus="this.placeholder=&quot;Example: ilovebiking@fablix.com&quot;" placeholder="">
+                    <p class="moving-placeholder nojs-margin" data-text="Email"></p>
+                    <noscript>
+                        <p class="form-text small">Example: <span aria-label="p-t-anteater">ptanteater</span></p>
+                    </noscript>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="form-group" style="margin-top: 50px;">
+            <input style="height: 48px; font-size: large;" type="password" class="login-input" aria-required="true"
+                aria-label="password" name="password" tabindex="2" id="password" value=""
+                oninput="this.setAttribute('value', this.value);" 
+                        onkeyup="this.setAttribute('value', this.value);" >
+
+            <p data-text="Password" class="moving-placeholder nojs-margin"></p>
+        </div>
+
+        <div align="center" style="height: 60px; margin-top: 40px" class="g-recaptcha" data-sitekey="6LcyQfQUAAAAADJMOEv0k7Mb6FDAQoGfk-OqBADs"></div>
+
+        <div>
+            <input type="submit" class="btn btn-lg login-btn action" name="login_button" value="Login" tabindex="3"
+                style="margin-top: 40px;">
+        </div>
+        <!--  width: 20%; float: right; margin-right: 20px; -->
+
+    </form>
+
+</div></div>
+    
+
+</body>
+
+<!-- jQuery -->
+<script type="text/javascript"
+        src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+<script>
+
+    function handleLoginResult(resultDataString) {
+            resultDataJson = JSON.parse(resultDataString);
+
+            console.log("handle login response");
+            console.log(resultDataJson);
+            console.log(resultDataJson["Status"]);
+
+            // If login succeeds, it will redirect the user to index.html
+
+            if (resultDataJson["Status"] === "success") {
+                localStorage.setItem("fablix_user_login_email", $("#email").val());
+                window.location.replace("index.html");
+
+            } else if (resultDataJson["Status"] === "reCaptcha_fail"){
+                $("#status").text("reCaptcha verification failed");
+                $("#status").css("visibility", "visible");
+            } else {
+                // If login fails, the web page will display
+                // error messages on <div> with id "login_error_message"
+                $("#status").text("Invalid email or password. Please try again.");
+                $("#status").css("visibility", "visible");
+            }
+        }
+
+    function submitLoginForm(formSubmitEvent) {
+        console.log("submit login form");
+
+
+        formSubmitEvent.preventDefault();
+
+        $.post(
+            "api/login",
+            data = {
+                email : $("#email").val(),
+                password : $("#password").val(),
+                ["g-recaptcha-response"]: grecaptcha.getResponse()
+            },
+            (resultDataString) => handleLoginResult(resultDataString)
+        );
+    }
+
+    // Bind the submit action of the form to a handler function
+    $("#login-form").submit((event) => submitLoginForm(event));
+</script>
+</html>
